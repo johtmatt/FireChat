@@ -6,53 +6,68 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.tmjtb.firechat.MainActivity"
+    tools:layout_editor_absoluteY="81dp"
     tools:showIn="@layout/app_bar_main">
 
     <Button
         android:id="@+id/buttonLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="16dp"
         android:text="Login"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintEnd_toStartOf="@+id/imageProfile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageProfile" />
 
     <Button
         android:id="@+id/buttonLogout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="17dp"
         android:text="Logout"
-        tools:layout_editor_absoluteX="279dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageProfile"
+        app:layout_constraintTop_toTopOf="@+id/imageProfile" />
 
     <ImageView
         android:id="@+id/imageProfile"
-        android:layout_width="165dp"
-        android:layout_height="158dp"
-        app:srcCompat="@android:drawable/star_big_off"
-        tools:layout_editor_absoluteX="108dp"
-        tools:layout_editor_absoluteY="16dp" />
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/textUserName"
+        app:layout_constraintEnd_toStartOf="@+id/buttonLogout"
+        app:layout_constraintStart_toEndOf="@+id/buttonLogin"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/star_big_off" />
 
     <TextView
         android:id="@+id/textUserName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Username"
-        tools:layout_editor_absoluteX="163dp"
-        tools:layout_editor_absoluteY="174dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textUserEmail"
+        app:layout_constraintEnd_toEndOf="@+id/imageProfile"
+        app:layout_constraintStart_toStartOf="@+id/imageProfile"
+        app:layout_constraintTop_toBottomOf="@+id/imageProfile" />
 
     <TextView
         android:id="@+id/textUserEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Email"
-        tools:layout_editor_absoluteX="163dp"
-        tools:layout_editor_absoluteY="193dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textUserID"
+        app:layout_constraintStart_toStartOf="@+id/textUserName"
+        app:layout_constraintTop_toBottomOf="@+id/textUserName" />
 
     <TextView
         android:id="@+id/textUserID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="280dp"
         android:text="User ID"
-        tools:layout_editor_absoluteX="163dp"
-        tools:layout_editor_absoluteY="212dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textUserEmail"
+        app:layout_constraintTop_toBottomOf="@+id/textUserEmail" />
 </android.support.constraint.ConstraintLayout>
