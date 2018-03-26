@@ -31,15 +31,15 @@ class FriendsActivity : AppCompatActivity() {
 
         attachRecyclerView()
 
-        addCellToRecyclerView(CellData(mUserEmail.mUserImageUrl, "That's me"))
-        addCellToRecyclerView(CellData(mUserEmail.mUserImageUrl, "That's me 2"))
-        addCellToRecyclerView(CellData(mUserEmail.mUserImageUrl, "That's me 3"))
-        addCellToRecyclerView(CellData(mUserEmail.mUserImageUrl, "That's me 4"))
-        addCellToRecyclerView(CellData(mUserEmail.mUserImageUrl, "That's me 5"))
+        addCellToRecyclerView(CellData(mUserEmail,mUserImageUrl, "That's me"))
+        addCellToRecyclerView(CellData(mUserEmail,mUserImageUrl, "That's me 2"))
+        addCellToRecyclerView(CellData(mUserEmail,mUserImageUrl, "That's me 3"))
+        addCellToRecyclerView(CellData(mUserEmail,mUserImageUrl, "That's me 4"))
+        addCellToRecyclerView(CellData(mUserEmail,mUserImageUrl, "That's me 5"))
     }
 
     private var mUserEmail: String = ""
-    private var mUserImgageUrl: String = ""
+    private var mUserImageUrl: String = ""
 
     lateinit var adapter: CellViewAdapter
 
@@ -53,11 +53,11 @@ class FriendsActivity : AppCompatActivity() {
     }
 
     private fun initializeRecyclerView() {
-        adapter = CellViewAdapter {view, psoition -> rowTapped(position) }
+        adapter = CellViewAdapter {view, position -> rowTapped(position) }
         recyclerView.adapter = adapter
     }
 
-    private fun rowTapped() {
+    private fun rowTapped(position: Int) {
         Log.d("debug", adapter.rows[position].headerTxt + " " + adapter.rows[position].messageText)
     }
 
