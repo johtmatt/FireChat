@@ -80,6 +80,13 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         toggle.syncState()
 
         nav_view.setNavigationItemSelectedListener(this)
+
+        buttonFriends.setOnClickListener({ view ->
+            val intent = Intent(this, FriendsActivity::class.java)
+            intent.putExtra("userEmail", mUser?.email.toString())
+            intent.putExtra("userImageUrl", mUser?.photoUrl.toString())
+            startActivity(intent)
+        })
     }
 
     val RC_SIGN_IN = 123
