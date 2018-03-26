@@ -16,8 +16,8 @@ class FriendsActivity : AppCompatActivity() {
         setContentView(R.layout.activity_friends)
 
         var ab = getSupportActionBar()
-        ab?.setTitle("FireChat1")
-        ab?.setSubtitle(("FireChat1"))
+        ab?.setTitle("FireChat")
+        ab?.setSubtitle(("FireChat"))
 
         ab?.setDisplayHomeAsUpEnabled(true)
 
@@ -31,7 +31,7 @@ class FriendsActivity : AppCompatActivity() {
 
         attachRecyclerView()
 
-        addCellToRecyclerView(CellData(mUserEmail,mUserImageUrl, "That's me"))
+        addCellToRecyclerView(CellData(mUserEmail,mUserImageUrl, "That's me 1"))
         addCellToRecyclerView(CellData(mUserEmail,mUserImageUrl, "That's me 2"))
         addCellToRecyclerView(CellData(mUserEmail,mUserImageUrl, "That's me 3"))
         addCellToRecyclerView(CellData(mUserEmail,mUserImageUrl, "That's me 4"))
