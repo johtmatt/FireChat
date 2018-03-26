@@ -7,8 +7,8 @@ import android.support.v7.widget.LinearLayoutManager
 import android.util.Log
 import com.example.tmjtb.Recycler.CellData
 import com.example.tmjtb.Recycler.CellViewAdapter
-import com.example.tmjtb.firechat1.ChatData
-import com.example.tmjtb.firechat1.FireChatService
+import com.example.tmjtb.firechatservice.ChatData
+import com.example.tmjtb.firechatservice.FireChatService
 import kotlinx.android.synthetic.main.activity_chat.*
 
 class ChatActivity : AppCompatActivity() {

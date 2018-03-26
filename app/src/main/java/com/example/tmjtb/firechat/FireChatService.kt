@@ -1,4 +1,4 @@
-package com.example.tmjtb.firechat1  // CHANGE TO YOUR PACKAGE NAME
+package com.example.tmjtb.firechatservice  // CHANGE TO YOUR PACKAGE NAME
 
 import android.content.Context
 import android.util.Log
