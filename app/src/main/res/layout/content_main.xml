@@ -16,25 +16,28 @@
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="8dp"
         android:text="Login"
-        app:layout_constraintBottom_toTopOf="@+id/buttonLogout"
-        app:layout_constraintEnd_toEndOf="@+id/imageProfile"
-        app:layout_constraintStart_toStartOf="@+id/imageProfile"
+        app:layout_constraintBottom_toTopOf="@+id/buttonFriends"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textUserID"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.929" />
 
     <Button
         android:id="@+id/buttonLogout"
         android:layout_width="wrap_content"
         android:layout_height="47dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:text="Logout"
         app:layout_constraintBottom_toTopOf="@+id/buttonFriends"
-        app:layout_constraintEnd_toEndOf="@+id/imageProfile"
-        app:layout_constraintStart_toStartOf="@+id/imageProfile" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textUserID"
+        app:layout_constraintVertical_bias="0.921" />
 
     <ImageView
         android:id="@+id/imageProfile"
@@ -47,6 +50,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside"
         app:srcCompat="@android:drawable/star_big_off" />
 
     <TextView
@@ -67,8 +71,8 @@
         android:layout_marginStart="8dp"
         android:text="Email"
         app:layout_constraintBottom_toTopOf="@+id/textUserID"
-        app:layout_constraintEnd_toEndOf="@+id/textUserName"
-        app:layout_constraintStart_toStartOf="@+id/textUserName"
+        app:layout_constraintEnd_toEndOf="@+id/imageProfile"
+        app:layout_constraintStart_toStartOf="@+id/imageProfile"
         app:layout_constraintTop_toBottomOf="@+id/textUserName" />
 
     <TextView
@@ -78,8 +82,8 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:text="User ID"
-        app:layout_constraintEnd_toEndOf="@+id/textUserName"
-        app:layout_constraintStart_toStartOf="@+id/textUserName"
+        app:layout_constraintEnd_toEndOf="@+id/imageProfile"
+        app:layout_constraintStart_toStartOf="@+id/imageProfile"
         app:layout_constraintTop_toBottomOf="@+id/textUserEmail" />
 
     <Button
